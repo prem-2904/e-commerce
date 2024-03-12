@@ -1,0 +1,61 @@
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    padding: 12px 28px;
+    box-sizing: border-box;
+    z-index: 99999;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.header-actions {
+    width: 50%;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .search-icon {
+    position: absolute;
+    z-index: 2;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    padding: 0.5%;
+}
+
+.notifications {
+    min-width: 250px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 0;
+    border: 0;
+    padding: 2%;
+}
+
+.dropdown-menu.divider {
+    margin: 5px 0;
+}
+
+.signup {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    padding-bottom: 0;
+}
+
+.nav-item:hover {
+    background-color: #f2f2f2;
+}
+
+.custom-btn{
+    cursor: pointer;
+}

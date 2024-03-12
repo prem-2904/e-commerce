@@ -1,0 +1,44 @@
+.btn-custom {
+    width: 25px;
+    height: 25px;
+    box-shadow: none;
+}
+
+.card {
+    width: 150px;
+    cursor: pointer;
+
+    :hover {
+        background-color: #f2f2f2;
+        // transform: scale(1.1);
+        // transition: border-bottom 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+}
+
+.item-title {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 120px;
+    text-overflow: ellipsis;
+    // padding: 0% 2%;
+}
+
+::ng-deep {
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: red !important;
+    }
+}
+
+.contents p,
+span {
+    color: #000;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

@@ -1,0 +1,72 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+}
+
+.right-container {
+    width: 50%;
+    height: 100vh;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-container {
+    width: 50%;
+    height: 100vh;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 2rem;
+    width: 70%;
+}
+
+.signup-form-items {
+    flex-direction: column;
+    display: flex;
+    padding: 0.5rem;
+}
+
+.signup-form-items-group {
+    display: flex;
+    padding: 0.5rem;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.h-2 {
+    height: 2.5rem;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+select {
+    border-color: #dee2e6;
+}
+
+.img-view {
+    height: 75%;
+    width: 75%;
+    mix-blend-mode: darken;
+}

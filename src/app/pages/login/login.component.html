@@ -1,0 +1,28 @@
+<div class="main-container">
+    <!-- <div class="left-container"> -->
+    <h2>Welcome Back!</h2>
+    <div class="signup-form">
+        <div class="signup-form-items">
+            <label for="username">Username</label>
+            <input [(ngModel)]="userName" class="form-control" required autocomplete="false" type="text"
+                name="username" id="username" placeholder="username">
+        </div>
+        <div class="signup-form-items">
+            <label for="password">Password</label>
+            <input [(ngModel)]="password" class="form-control" required autocomplete="false" type="password"
+                name="passsword" id="password" placeholder="Password">
+        </div>
+
+        <div class="signup-form-items">
+            <button class="btn btn-primary" type="submit" (click)="validateUserLogin()">Login</button>
+        </div>
+        <div class="signup-form-items-group justify-space-between">
+            <p>New user? <a href="/signup">Register</a></p>
+            <!-- <a routerLink="/forgot">Forgot Password?</a> -->
+        </div>
+    </div>
+    <!-- </div> -->
+    <!-- <div class="right-container">
+        <img class="img-view" src="assets/svg/pharmacy2.svg" alt="" width="50%" height="50%">
+    </div> -->
+</div>

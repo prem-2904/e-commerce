@@ -1,0 +1,77 @@
+<div class="product-container">
+    <div class="view-options">
+
+    </div>
+    <div class="products">
+        <div class="product-list">
+            @for (item of products$ | async; track $index) {
+            <!-- <div class="card card-custom" style="width: 18rem;">
+                <div class="wishlist">
+                    <img class="card-img-top img-custom" [src]="item.image" alt="Card image cap">
+                </div>
+                <button mat-icon-button style="color: black;top: -10px;right: -10px;"
+                    class="position-absolute"><mat-icon>favorite_outline</mat-icon></button>
+                <div class="card-body">
+                    <ngb-rating [rate]="item.rating.rate" /> ({{item.rating.count}})
+                    <h5 class="card-title text-black">{{item.title.substring(0,25)}}...</h5>
+                    <p class="card-text text-black">{{item.description.substring(0,50)}}...</p>
+                    <span>{{item.price}}</span>
+                </div>
+                <div class="card-footer w-100">
+                    <button mat-button class="w-75"><mat-icon>add_shopping_cart</mat-icon> Add to Cart</button>
+                    <button mat-icon-button class="w-25 black"
+                        style="color: black"><mat-icon>favorite_outline</mat-icon></button>
+                </div>
+            </div> -->
+
+            <div class="h-100 category-cards">
+                <div class="item h-100">
+                    <div class="card-app position-relative mx-2 mb-2">
+                        <div class="card-body-app p-0">
+                            <span>
+                                <button class="btn wishlist-icon btn-link no-underline"
+                                    (click)="saveWishlist(item.id)"><mat-icon>favorite_outline</mat-icon></button>
+                            </span>
+                            <a class="text-decoration-none" role="link" [routerLink]="['/home/products/',item.id]">
+                                <div class="px-2 pointer">
+                                    <div class="text-center mb-2 img-container" style="min-height: 10rem;">
+                                        <div class="fadeIn custom-fadeIn-image"><img class="d-inline-block w-25"
+                                                [src]="item.image"
+                                                alt="Avelia Aloe Vera Cucumber Moisturizing 400ML Lotion"></div>
+                                    </div>
+                                    <div>
+                                        <p class="font-12 text-secondary mb-1 text-truncate"><ngb-rating
+                                                [rate]="item.rating.rate" /> ({{item.rating.count}})</p>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-between">
+                                        <h6 class="truncate-line-2" style="min-height: 2.375rem;"><span
+                                                title="Avelia Aloe Vera Cucumber Moisturizing 400ML Lotion">{{item.title.substring(0,50)}}...</span>
+                                        </h6>
+                                        <div class=" ">
+                                            <div class="d-flex">
+                                                <h6 class="mb-0">MRP <strong class="rupee">₹</strong>{{item.price}}
+                                                </h6>
+                                                <!-- <p class="mb-0 text-secondary font-14 ml-2">₹<del>399.00</del></p> -->
+                                            </div>
+                                            <!-- <p class="mb-2 font-12 ml-0 text-dark">(<span class="font-weight-bold">Save
+                                                    67.67%</span>)</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer bg-white p-2 border-0">
+                            <button role="button" type="button" (click)="addToCart(item.id)"
+                                class="btn btn-block btn-brand-gradient rounded-pill custom-btn-lg">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            }
+
+
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
